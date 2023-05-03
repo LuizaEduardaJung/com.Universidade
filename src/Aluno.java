@@ -25,8 +25,11 @@ public class Aluno {
     }
 
     public void matricularDisciplina(Disciplina disciplina) {
-        disciplinasMatriculadas.add(disciplina);
-
+        if ((disciplinasMatriculadas.size() < 5)&& (!disciplinasMatriculadas.contains(disciplina))) {
+            disciplinasMatriculadas.add(disciplina);
+        } else {
+            System.out.println("Disciplina não pode ser adicionada!");
+        }
     }
 
     public Aluno(int codigo, String nome, String matricula, Curso curso, List<Disciplina> disciplinasMatriculadas) {
