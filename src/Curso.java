@@ -14,12 +14,12 @@ import java.util.List;
 public class Curso {
     private int codigo;
     private String nome;
-    private List<Diciplina> diciplinas;
+    private List<Disciplina> diciplinas;
 
     public Curso() {
     }
 
-    public Curso(int codigo, String nome, List<Diciplina> diciplinas) {
+    public Curso(int codigo, String nome, List<Disciplina> diciplinas) {
         this.codigo = codigo;
         this.nome = nome;
         this.diciplinas = diciplinas;
@@ -41,11 +41,11 @@ public class Curso {
         this.nome = nome;
     }
 
-    public List<Diciplina> getDiciplinas() {
+    public List<Disciplina> getDiciplinas() {
         return diciplinas;
     }
 
-    public void setDiciplinas(List<Diciplina> diciplinas) {
+    public void setDiciplinas(List<Disciplina> diciplinas) {
         this.diciplinas = diciplinas;
     }
 
