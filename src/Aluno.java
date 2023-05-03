@@ -2,15 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Escola
- */
 public class Aluno {
 
     private int codigo;
@@ -25,8 +16,11 @@ public class Aluno {
     }
 
     public void matricularDisciplina(Disciplina disciplina) {
-        disciplinasMatriculadas.add(disciplina);
-
+        if ((disciplinasMatriculadas.size() < 5)&& (!disciplinasMatriculadas.contains(disciplina))) {
+            disciplinasMatriculadas.add(disciplina);
+        } else {
+            System.out.println("Disciplina não pode ser adicionada!");
+        }
     }
     public void listarDisciplinas (Disciplina disciplina){
         disciplinasMatriculadas.add(disciplina);
@@ -84,5 +78,4 @@ public class Aluno {
     public String toString() {
         return "Aluno{" + "codigo=" + codigo + ", nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + ", disciplinasMatriculadas=" + disciplinasMatriculadas + '}';
     }
-
 }
