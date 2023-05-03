@@ -28,6 +28,9 @@ public class Aluno {
         disciplinasMatriculadas.add(disciplina);
 
     }
+    public void listarDisciplinas (Disciplina disciplina){
+        disciplinasMatriculadas.add(disciplina);
+    }
 
     public Aluno(int codigo, String nome, String matricula, Curso curso, List<Disciplina> disciplinasMatriculadas) {
         this.codigo = codigo;
