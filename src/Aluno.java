@@ -22,10 +22,12 @@ public class Aluno {
             System.out.println("Disciplina não pode ser adicionada!");
         }
     }
-    public void listarDisciplinas (Disciplina disciplina){
-        disciplinasMatriculadas.add(disciplina);
-    }
+ public void ListarDiciplina() {
+     System.out.println(this.disciplinasMatriculadas);
+        System.out.println("FALTAM - " +(curso.getDiciplinas().size()-this.disciplinasMatriculadas.size()));
 
+    }
+ 
     public Aluno(int codigo, String nome, String matricula, Curso curso, List<Disciplina> disciplinasMatriculadas) {
         this.codigo = codigo;
         this.nome = nome;
@@ -37,7 +39,7 @@ public class Aluno {
     public int getCodigo() {
         return codigo;
     }
-
+    
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
